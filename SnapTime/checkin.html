@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Daily Check‑In</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Daily Check‑In</h2>
+
+    <label>How many hours did you sleep?</label>
+    <input type="number" id="sleep" placeholder="e.g. 7">
+
+    <label>Did you eat breakfast?</label>
+    <select id="meal">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <label>Your mood today</label>
+    <select id="mood">
+      <option value="happy">😊 Happy</option>
+      <option value="normal">🙂 Normal</option>
+      <option value="tired">😴 Tired</option>
+      <option value="stressed">😟 Stressed</option>
+    </select>
+
+    <label>Energy level (1–10)</label>
+    <input type="range" id="energy" min="1" max="10" value="6">
+
+    <button class="btn" onclick="saveCheckin()">Save & Generate Plan</button>
+    <a class="btn secondary" href="planner.html">Skip to Planner</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

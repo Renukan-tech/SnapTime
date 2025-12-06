@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Your Daily Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Your Smart Planner</h2>
+    <div id="aiSummary" class="summary-box"></div>
+
+    <h3>Add Tasks</h3>
+    <input id="taskInput" placeholder="Enter task name (e.g. Maths assignment)">
+    <select id="priority">
+      <option value="high">High Priority</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+    <label>Estimated hours (approx)</label>
+    <input id="estHours" type="number" placeholder="e.g. 2" min="0.25" step="0.25">
+
+    <button class="btn" onclick="addTask()">Add Task</button>
+
+    <h3>Current Tasks</h3>
+    <div id="taskList"></div>
+
+    <h3>Today's Schedule (AI‑Generated)</h3>
+    <div id="schedule"></div>
+
+    <br>
+    <a href="index.html" class="btn secondary">Back to Home</a>
+    <a href="timetable.html" class="btn secondary">Open Weekly Timetable</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
